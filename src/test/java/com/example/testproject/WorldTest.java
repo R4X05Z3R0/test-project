@@ -20,6 +20,6 @@ public class WorldTest {
     void helloWorld_shouldReturnHelloWorld() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Bakugan"));
+                .andExpect(content().string("Hello World"));
     }
 }
